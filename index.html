@@ -12,24 +12,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container text-center">
         <div class="card">
             <div class="card-header">
                 Word Counter
             </div>
             <div class="card-body">
-                <input type="textarea" id="text-box" placeholder="Enter your Text here...">
+                <textarea name="text-box" id="text-box" rows="10" cols="40"
+                    placeholder="Enter your text here..."></textarea>
             </div>
-            <div class="card-footer">
-                <ul>
-                    <li>characters : </li>
-                    <li>Words : </li>
-                    <li>Lines : </li>
-                    <li>Symbols : </li>
-                </ul>
+            <div class="card-footer" id="content">
+                <span id="character"></span>
+                <span id="words"></span>
+                <span id="lines"></span>
+                <span id="symbols"></span>
             </div>
         </div>
     </div>
